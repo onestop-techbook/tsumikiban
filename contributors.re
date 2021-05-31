@@ -53,6 +53,20 @@
 Podcast生やすお兄さんとして、複数のPodcastを掛け持ちして配信をしています。
 
 　
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/ohsawa0515_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        大澤秀一 @ohsawa0515 https://twitter.com/ohsawa0515\\
+        サークル名： OHK
+        \end{minipage}
+    \hspace{1ex} %コメントとアイコンの間を空けて体裁を整える
+//}
+表参道にあるIT企業のインフラエンジニアとして、開発基盤の改善、AWSとGCPとのマルチクラウド化、クラウドコスト最適化に従事し、最近はR&D部署に移動しDevOpsエンジニアやっています。
+
+　
 == 表紙イラスト・デザイン　
 
 //embed{
