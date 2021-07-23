@@ -34,7 +34,7 @@ ESP8266の後継チップとして登場。Wi-Fi＋Bluetooth機能がついて�
 
 FRISKサイズのマイコンデバイスNefryの後継として登場。ESP32チップが搭載されている。
 
-* TWE-Lite[^twelite] （Zigbee[^zigbee]）
+* TWE-Lite[^twilite] （Zigbee[^zigbee]）
 屋外で無線マイコンモジュールを使用するワインIoT案件で、省電力・通信距離が決め手となって選択。電池駆動のメッシュ通信でアンカーにはラズパイを使用。
 
 * がじぇっとるねさす[^gadgetrecesas] 
