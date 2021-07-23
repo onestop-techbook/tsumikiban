@@ -108,30 +108,44 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 [^hack]: 物事を効率よくこなしたり質を上げたりするためのコツやテクニック。既存の制約を打破したり回避する創意工夫、その取り組み。
 [^airprint]: AppleのMac OS X Lion以降とiOS 4.2以降の機能で、無線LANを通してAirPrint対応プリンターもしくはWindows、macOS、GNU/Linux PCに接続している非対応プリンターに直接印刷できる機能。
 
-* LED（RGB（フルカラーLED）、WS2812B ）
+* LED（RGB（フルカラーLED）、WS2812B[^ws2812b]）
     * カンパイシェア
-    * 「デカ顔箱 」をIoT化
+    * 「デカ顔箱[^dekakao]」をIoT化
 * スイッチ（リレー、MOS-FET）
     * おつまみディスペンサーをIoT化
     * アロマディフューザーをIoT化
 * モーター（サーボ、ギヤード）
     * ドリンクディスペンサーをIoT化
-    * 「カウントダウンだけで宴会は盛り上がる 」をIoT化
+    * 「カウントダウンだけで宴会は盛り上がる[^countdown]」をIoT化
 * センサー（温湿度、気圧、照度、CO2濃度、スライド抵抗値）
-    * I2C 
+    * I2C[^i2c]
         * ワインIoT
-    * UART 
+    * UART[^uart] 
         * Nefry BTとCO2センサー（MH-Z19）で職場環境を見える化
         * Nefry BTとDFPlayer miniで音楽を再生
-    * アナログ（ADC ）
-        * ESP8266でTouchDesigner のMQTT  Client DATを試してみた
+    * アナログ（ADC[^adc]）
+        * ESP8266でTouchDesigner[^touchdesigner]のMQTT[^mqtt]Client DATを試してみた
 * ディスプレイ
-    * enebular  AWS IoT agentを使用してラズパイのマルチモニター環境を制御
+    * enebular[^enebular] AWS IoT agentを使用してラズパイのマルチモニター環境を制御
 * カメラ
-    * ラズパイカメラからNDI 送信
+    * ラズパイカメラからNDI[^ndi]送信
 * 制御（MQTT、WebSocket、DMX 、ArtNet 、NDI）
 * 無線（Wi-Fi、Bluetooth、Zigbee）
 
+[^ws2812b]: シリアル通信でRGB値が制御できる小型のマイコン内蔵LED。
+[^dekakao]: デカ顔箱 https://dailyportalz.jp/kiji/160825197264
+[^countdown]: https://dailyportalz.jp/kiji/180126201872
+[^i2c]: 電子部品と通信する際に使用する端子で、センサーから計測した値を取得したり、ディスプレイに値 を表示したり、モーターなどを制御する際に使用します。SDAはデータの送受信、SCLは接続した電子部品同士の同期に使用されます。
+[^uart]: 電子部品や外部のコンピュータなどとデータのやり取りをする際に使用する端子で、TXはデータの送信、RXはデータの受信に使用されます。
+[^adc]: ADC（Analog-to-Digital Converter）アナログデジタル変換器。
+[^touchdegigner]: https://derivative.ca/
+[^mqtt]: MQTT（Message Queuing Telemetry Transport）IoTやM2M向けに開発された軽量プロトコル。
+[^enebular]: https://www.enebular.com/ja/
+[^ndi]: NDI（Network Device Interface）NewTek社によって開発されたロイヤリティフリーのIPビデオ伝送方式。
+  照明や舞台効果を制御する為の通信プロトコル（通信手順、ルール）で、制御信号を発信するコントローラとその信号に反応する機器（デバイス）の通信方式を定める規格。
+  Artistic License社によって策定されたDMX信号をイーサネットを介して送受信するための通信プロトコル。
+  https://dotstud.io/blog/face-robot-making-maruko/
+ 
 
 ## 「Lチカ」の次のステップ
 これまで私が一番衝撃的だったのは「へっぽこまるこ」さんの「Lチカ」の次に「顔面ロボット 」の製作に取り組まれた事例です。見た目のインパクトが強く、とてもユニークな作品で、一度見たら絶対に忘れないと思います。
