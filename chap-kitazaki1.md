@@ -37,7 +37,7 @@ FRISKサイズのマイコンデバイスNefryの後継として登場。ESP32�
 * TWE-Lite[^twelite] （Zigbee[^zigbee]）
 屋外で無線マイコンモジュールを使用するワインIoT案件で、省電力・通信距離が決め手となって選択。電池駆動のメッシュ通信でアンカーにはラズパイを使用。
 
-* がじぇっとるねさす[gadgetrecesas] 
+* がじぇっとるねさす[^gadgetrecesas] 
 
 「ピンクのボード」 コンテストへ応募するためにGR-COTTONやGR-LYCHEEを購入。少しだけかじる。
 
