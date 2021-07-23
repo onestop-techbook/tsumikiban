@@ -27,6 +27,58 @@ Linux系つながりから使い始める。Amazon Dash Button[^amazonDash]とPe
 
 ESP8266の後継チップとして登場。Wi-Fi＋Bluetooth機能がついていることが話題になる。
 
+* NefryBT[^nefryBT]
+
+FRISKサイズのマイコンデバイスNefryの後継として登場。ESP32チップが搭載されている。
+
+* TWE-Lite[^twelite] （Zigbee[^zigbee]）
+屋外で無線マイコンモジュールを使用するワインIoT案件で、省電力・通信距離が決め手となって選択。電池駆動のメッシュ通信でアンカーにはラズパイを使用。
+
+* がじぇっとるねさす[gadjetrecesas] 
+
+「ピンクのボード」 コンテストへ応募するためにGR-COTTONやGR-LYCHEEを購入。少しだけかじる。
+
+* Arduino UNO（SORACOMイベントの参加賞の抽選でもらう。）
+* Arduino Pro Micro（自作キーボードに使用。）
+* Arduino UNO（中華製）（作品展示、バラマキ用に購入。）
+* obniz （ESP32）[^obniz]
+
+ウェブ系つながりから使い始める。組み込みデバイスのコーディングが不要なのが特徴。
+
+* M5Stack （ESP32）[^m5stack]
+
+ガワ（ケース）がしっかりしていて、安価で種類が豊富。日本のコミュニティが盛り上がっている。
+
+* Jetson （Nano、Xavier NX）[^jetson]
+
+ラズパイ＋GPU、NVIDIAグラフィックボードの印象から使い始める。
+
+* Makeblock mBot[^makeblock]
+
+子供向け教育教材として購入。中身はArduino。
+
+* micro:bit[^microbit] 
+
+子供に渡す目的で購入。Nordic nRF51822チップが搭載されている。
+
+* MDBT42Q[^mdbt] 
+
+Nordic nRF52832チップが搭載されている。野良LEDバッジ初号機で使用。
+
+* ラズパイPico
+
+microPython、circuitPythonなどのスクリプト言語で開発できる。
+
+以上のボードが目に入りましたが、これ以外にもっとあるかもしれません。(汗;
+
+## モノづくりの第一歩「Lチカ」
+
+さて、みなさんはモノづくりを始めるのにあたり最初の第一歩は「Lチカ[^LED]」が基本ですが、その次のステップをどうするか困ったり迷ったりしたことはありませんか。
+
+私の第二歩目は依頼や相談がきっかけで、IoT縛りの勉強会！IoTLT[^IoTLT]というイベントでAmazon Dash Buttonをハック[^hack]してPepperを操作するデモンストレーションを行ったり、Pepperが撮影した写真をAirPrint[^airprint]でプリンターから印刷する試作を行いました。
+
+これまでの野良ハック活動で使用してきた要素技術を簡単に書き出してみます。
+
 
 [^norahack]: 野良ハック　https://qiita.com/yskmjp/items/cedbfd3f3980c42a8771
 [^ESP32]: ESP32 Espressif Systems社が開発したWi-FiとBluetoothを内蔵する低コスト、低消費電力なSoCのマイクロコントローラ。
@@ -41,3 +93,18 @@ ESP8266の後継チップとして登場。Wi-Fi＋Bluetooth機能がついて�
 [^pepper]: Pepper https://www.softbank.jp/robot/pepper/
 [^wioNode]: WioNode https://www.seeedstudio.com/Wio-Node.html
 [^Grove]: Seeed Technology社が開発したモジュール方式のコネクタが特徴の挿すだけで使えるGroveシステム。
+[^nefryBT]: NefryBT  https://dotstud.io/docs/nefrybt/
+[^twilite]: TWI-Lite https://mono-wireless.com/jp/products/TWE-LITE/index.html
+[^zigbee] Zigbee Allianceが策定した短距離無線通信規格の1つ。低コスト、低消費電力でワイヤレスセンサーネットワークを主目的とし、電池駆動可能な超小型機器への実装に向いている。
+[^gadgetrecesas]: がじぇっとるねさす https://www.renesas.com/jp/ja/products/gadget-renesas
+[^obniz]: obniz https://obniz.com/ja/
+[^m5stack]: M5Stack https://m5stack.com/
+[^jetson]: Jetson https://www.nvidia.com/ja-jp/autonomous-machines/
+[^makeblock]: makeblock https://www.makeblock.com/steam-kits/mbot
+[^microbit]: MicroBit  https://microbit.org/
+[^mdbt]: MDBT42Q https://www.raytac.com/product/ins.php?index_id=31
+
+[^LED]: LEDチカチカの略。Arduino 等のマイコン工作を始めるとき、最初に LED を点滅（チカチカ）させるプログラムで試すことが多いことから「LEDチカチカ」→「Lチカ」と呼ばれる。
+[^iotlt]: IoTLT https://iotlt.connpass.com/
+[^hack]: 　物事を効率よくこなしたり質を上げたりするためのコツやテクニック。既存の制約を打破したり回避する創意工夫、その取り組み。
+[^airprint]: AppleのMac OS X Lion以降とiOS 4.2以降の機能で、無線LANを通してAirPrint対応プリンターもしくはWindows、macOS、GNU/Linux PCに接続している非対応プリンターに直接印刷できる機能。
