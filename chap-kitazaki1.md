@@ -26,7 +26,7 @@ Linux系つながりから使い始める。Amazon Dash Button[^amazonDash]とPe
 [^mugbot]: mugbot http://www.mugbot.com/
 [^blog]: zakkieaのブログ Yaita魅力フェスタ2018にマグボットを出展してきた。(2018.11.13) https://zakkiea.hatenablog.com/entry/2018/11/13/180749
 [^donkeycar]: DONKEY CAR https://www.donkeycar.com/
-[^donkyecarevent]:【MFT2019前夜】AIロボットカー走行会！ https://jsjug.connpass.com/event/140601/
+[^donkeycarevent]:【MFT2019前夜】AIロボットカー走行会！ https://jsjug.connpass.com/event/140601/
 [^intelEdison]: Intel Edison インテル社によって開発されたIoTデバイス向けのシングルボードコンピュータ。
 [^amazonDash]: Amazon dash Amazonが開発したWi-Fi接続された専用デバイスで、ボタンを押すだけで日用品や食料品などを注文できる。
 [^pepper]: Pepper https://www.softbank.jp/robot/pepper/
