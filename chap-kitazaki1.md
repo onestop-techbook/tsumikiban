@@ -109,26 +109,26 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 [^airprint]: AppleのMac OS X Lion以降とiOS 4.2以降の機能で、無線LANを通してAirPrint対応プリンターもしくはWindows、macOS、GNU/Linux PCに接続している非対応プリンターに直接印刷できる機能。
 
 * LED（RGB（フルカラーLED）、WS2812B ）
-** カンパイシェア
-** 「デカ顔箱 」をIoT化
+    * カンパイシェア
+    * 「デカ顔箱 」をIoT化
 * スイッチ（リレー、MOS-FET）
-** おつまみディスペンサーをIoT化
-** アロマディフューザーをIoT化
+    * おつまみディスペンサーをIoT化
+    * アロマディフューザーをIoT化
 * モーター（サーボ、ギヤード）
-** ドリンクディスペンサーをIoT化
-** 「カウントダウンだけで宴会は盛り上がる 」をIoT化
+    * ドリンクディスペンサーをIoT化
+    * 「カウントダウンだけで宴会は盛り上がる 」をIoT化
 * センサー（温湿度、気圧、照度、CO2濃度、スライド抵抗値）
-** I2C 
-*** ワインIoT
-** UART 
-*** Nefry BTとCO2センサー（MH-Z19）で職場環境を見える化
-*** Nefry BTとDFPlayer miniで音楽を再生
-** アナログ（ADC ）
-*** ESP8266でTouchDesigner のMQTT  Client DATを試してみた
+    * I2C 
+        * ワインIoT
+    * UART 
+        * Nefry BTとCO2センサー（MH-Z19）で職場環境を見える化
+        * Nefry BTとDFPlayer miniで音楽を再生
+    * アナログ（ADC ）
+        * ESP8266でTouchDesigner のMQTT  Client DATを試してみた
 * ディスプレイ
-** enebular  AWS IoT agentを使用してラズパイのマルチモニター環境を制御
+    * enebular  AWS IoT agentを使用してラズパイのマルチモニター環境を制御
 * カメラ
-** ラズパイカメラからNDI 送信
+    * ラズパイカメラからNDI 送信
 * 制御（MQTT、WebSocket、DMX 、ArtNet 、NDI）
 * 無線（Wi-Fi、Bluetooth、Zigbee）
 
