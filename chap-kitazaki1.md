@@ -136,7 +136,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 
 ![ワインIoT案件でTWE-Lite基板を使用](images/chap-kitazaki1/wine.jpg?scale=0.5)
 
-![カンパイシェア。コンテスト（ルネサスデザインコンテスト2017）へ応募するためにグラス（江戸切子）の底面にGR-COTTON基板を仕込む。](images/chap-kitazaki1/kanpaishare.jpg?scale=0.5)
+![カンパイシェア。コンテスト（ルネサスデザインコンテスト2017）へ応募するためにグラス（江戸切子）の底面にGR-COTTON基板を仕込む。](images/chap-kitazaki1/kanpaishare.jpg?scale=0.3)
 
 [^ws2812b]: シリアル通信でRGB値が制御できる小型のマイコン内蔵LED。
 [^dekakao]: デカ顔箱 https://dailyportalz.jp/kiji/160825197264
@@ -165,7 +165,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 * 気温・湿度データの表示
 * 気圧データ（時系列）の可視化
 
-![気圧データの可視化。グラフの傾きから台風の接近スピードよりも抜けるスピードの方が早いことがわかる。](images/chap-kitazaki1/ambient.jpg?scale=0.5)
+![気圧データの可視化。グラフの傾きから台風の接近スピードよりも抜けるスピードの方が早いことがわかる。](images/chap-kitazaki1/ambient.jpg?scale=0.3)
 
 小学校の授業でも電気工作や電子工作が行われていますので、親子で一緒に取り組むのも良いと思います。
 
@@ -188,7 +188,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
     * ペットフードディスペンサーをIoT化
     * かき氷器をIoT化
 
-![ドリンクディスペンサー（サングリア）をIoT化。Wio Node基板を仕込み、スマートスピーカーからサーボモーターを駆動。](images/chap-kitazaki1/iotdrink.png?scale=0.5)
+![ドリンクディスペンサー（サングリア）をIoT化。Wio Node基板を仕込み、スマートスピーカーからサーボモーターを駆動。](images/chap-kitazaki1/iotdrink.png?scale=0.3)
 
 「Lチカ」、LEDの延長線で、光モノ系へ進むのも楽しいと思います。
 
