@@ -109,8 +109,8 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 [^airprint]: AppleのMac OS X Lion以降とiOS 4.2以降の機能で、無線LANを通してAirPrint対応プリンターもしくはWindows、macOS、GNU/Linux PCに接続している非対応プリンターに直接印刷できる機能。
 
 * LED（RGB（フルカラーLED）、WS2812B ）
-　** カンパイシェア
-　** 「デカ顔箱 」をIoT化
+** カンパイシェア
+** 「デカ顔箱 」をIoT化
 * スイッチ（リレー、MOS-FET）
 ** おつまみディスペンサーをIoT化
 ** アロマディフューザーをIoT化
