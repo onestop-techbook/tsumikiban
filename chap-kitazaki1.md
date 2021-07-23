@@ -75,7 +75,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 
 さて、みなさんはモノづくりを始めるのにあたり最初の第一歩は「Lチカ[^LED]」が基本ですが、その次のステップをどうするか困ったり迷ったりしたことはありませんか。
 
-私の第二歩目は依頼や相談がきっかけで、IoT縛りの勉強会！IoTLT[^IoTLT]というイベントでAmazon Dash Buttonをハック[^hack]してPepperを操作するデモンストレーションを行ったり、Pepperが撮影した写真をAirPrint[^airprint]でプリンターから印刷する試作を行いました。
+私の第二歩目は依頼や相談がきっかけで、IoT縛りの勉強会！IoTLT[^IoTLT]というイベントでAmazon Dash ButtonをハックしてPepperを操作するデモンストレーションを行ったり、Pepperが撮影した写真をAirPrint[^airprint]でプリンターから印刷する試作を行いました。
 
 これまでの野良ハック活動で使用してきた要素技術を簡単に書き出してみます。
 
@@ -87,7 +87,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 [^mugbot]: mugbot http://www.mugbot.com/
 [^blog]: zakkieaのブログ Yaita魅力フェスタ2018にマグボットを出展してきた。(2018.11.13) https://zakkiea.hatenablog.com/entry/2018/11/13/180749
 [^donkeycar]: DONKEY CAR https://www.donkeycar.com/
-[^donkyecarevent]:　【MFT2019前夜】AIロボットカー走行会！ https://jsjug.connpass.com/event/140601/
+[^donkyecarevent]:【MFT2019前夜】AIロボットカー走行会！ https://jsjug.connpass.com/event/140601/
 [^intelEdison]: Intel Edison インテル社によって開発されたIoTデバイス向けのシングルボードコンピュータ。
 [^amazonDash]: Amazon dash Amazonが開発したWi-Fi接続された専用デバイスで、ボタンを押すだけで日用品や食料品などを注文できる。
 [^pepper]: Pepper https://www.softbank.jp/robot/pepper/
@@ -103,8 +103,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 [^makeblock]: makeblock https://www.makeblock.com/steam-kits/mbot
 [^microbit]: MicroBit  https://microbit.org/
 [^mdbt]: MDBT42Q https://www.raytac.com/product/ins.php?index_id=31
-
 [^LED]: LEDチカチカの略。Arduino 等のマイコン工作を始めるとき、最初に LED を点滅（チカチカ）させるプログラムで試すことが多いことから「LEDチカチカ」→「Lチカ」と呼ばれる。
 [^iotlt]: IoTLT https://iotlt.connpass.com/
-[^hack]: 　物事を効率よくこなしたり質を上げたりするためのコツやテクニック。既存の制約を打破したり回避する創意工夫、その取り組み。
+
 [^airprint]: AppleのMac OS X Lion以降とiOS 4.2以降の機能で、無線LANを通してAirPrint対応プリンターもしくはWindows、macOS、GNU/Linux PCに接続している非対応プリンターに直接印刷できる機能。
