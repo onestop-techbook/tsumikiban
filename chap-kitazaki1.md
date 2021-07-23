@@ -8,6 +8,10 @@
 
 最近はESP32[^ESP32]というWi-Fi、Bluetooth機能を備えてArduino[^Arduino]IDEで開発可能な安価なチップを搭載した魅力的なデバイスがいくつも発売されており、ついつい欲しいデバイスに手を伸ばして「積み基板」を増やしてしまっていませんか。
 
+[^norahack]: 野良ハック　https://qiita.com/yskmjp/items/cedbfd3f3980c42a8771
+[^ESP32]: ESP32 Espressif Systems社が開発したWi-FiとBluetoothを内蔵する低コスト、低消費電力なSoCのマイクロコントローラ。
+[^Arduino]: Arduino https://www.arduino.cc/
+
 ## 積み基板遍歴
 入手したきっかけを思い出しながら自宅の「積み基板」をリストアップすると、
 
@@ -71,18 +75,6 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 
 以上のボードが目に入りましたが、これ以外にもっとあるかもしれません。(汗;
 
-## モノづくりの第一歩「Lチカ」
-
-さて、みなさんはモノづくりを始めるのにあたり最初の第一歩は「Lチカ[^LED]」が基本ですが、その次のステップをどうするか困ったり迷ったりしたことはありませんか。
-
-私の第二歩目は依頼や相談がきっかけで、IoT縛りの勉強会！IoTLT[^IoTLT]というイベントでAmazon Dash Buttonをハック[^hack]してPepperを操作するデモンストレーションを行ったり、Pepperが撮影した写真をAirPrint[^airprint]でプリンターから印刷する試作を行いました。
-
-これまでの野良ハック活動で使用してきた要素技術を簡単に書き出してみます。
-
-
-[^norahack]: 野良ハック　https://qiita.com/yskmjp/items/cedbfd3f3980c42a8771
-[^ESP32]: ESP32 Espressif Systems社が開発したWi-FiとBluetoothを内蔵する低コスト、低消費電力なSoCのマイクロコントローラ。
-[^Arduino]: Arduino https://www.arduino.cc/
 [^rasPi]: Raspberry Pi（ラズベリー パイ）の略称。ラズベリーパイ財団によって開発されているARMプロセッサを搭載したシングルボードコンピュータ。
 [^mugbot]: mugbot http://www.mugbot.com/
 [^blog]: zakkieaのブログ Yaita魅力フェスタ2018にマグボットを出展してきた。(2018.11.13) https://zakkiea.hatenablog.com/entry/2018/11/13/180749
@@ -103,6 +95,15 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 [^makeblock]: makeblock https://www.makeblock.com/steam-kits/mbot
 [^microbit]: MicroBit  https://microbit.org/
 [^mdbt]: MDBT42Q https://www.raytac.com/product/ins.php?index_id=31
+
+## モノづくりの第一歩「Lチカ」
+
+さて、みなさんはモノづくりを始めるのにあたり最初の第一歩は「Lチカ[^LED]」が基本ですが、その次のステップをどうするか困ったり迷ったりしたことはありませんか。
+
+私の第二歩目は依頼や相談がきっかけで、IoT縛りの勉強会！IoTLT[^IoTLT]というイベントでAmazon Dash Buttonをハック[^hack]してPepperを操作するデモンストレーションを行ったり、Pepperが撮影した写真をAirPrint[^airprint]でプリンターから印刷する試作を行いました。
+
+これまでの野良ハック活動で使用してきた要素技術を簡単に書き出してみます。
+
 [^LED]: LEDチカチカの略。Arduino 等のマイコン工作を始めるとき、最初に LED を点滅（チカチカ）させるプログラムで試すことが多いことから「LEDチカチカ」→「Lチカ」と呼ばれる。
 [^IoTLT]: IoTLT https://iotlt.connpass.com/
 [^hack]: 　物事を効率よくこなしたり質を上げたりするためのコツやテクニック。既存の制約を打破したり回避する創意工夫、その取り組み。
