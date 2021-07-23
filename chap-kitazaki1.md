@@ -16,5 +16,17 @@
 
 * ラズパイ[^rasPi] 大量
 
-[^rasPi]: Raspberry Pi（ラズベリー パイ）の略称。ラズベリーパイ財団によって開発されているARMプロセッサを搭載したシングルボードコンピュータ。
+Linux系つながりで初期から使い始める。ソーシャルロボット「マグボット 」[^mugbot]の展示[^blog]のために大量購入する。主催するハンズオンイベントで使用。DonkeyCar[^donkeycar]走行会[^donkeycarevent]で使用。
 
+* intel Edison[^intelEdison]
+
+Linux系つながりから使い始める。Amazon Dash Button[^amazonDash]とPepper[^pepper]との連携で使用。当時はWi-FI＋Bluetooth機能で一択。残念ながら製造中止になる。
+
+[^rasPi]: Raspberry Pi（ラズベリー パイ）の略称。ラズベリーパイ財団によって開発されているARMプロセッサを搭載したシングルボードコンピュータ。
+[^mugbot]: mugbot http://www.mugbot.com/
+[^blog]: zakkieaのブログ Yaita魅力フェスタ2018にマグボットを出展してきた。(2018.11.13) https://zakkiea.hatenablog.com/entry/2018/11/13/180749
+[^donkeycar]: DONKEY CAR https://www.donkeycar.com/
+[^donkyecarevent]:【MFT2019前夜】AIロボットカー走行会！ https://jsjug.connpass.com/event/140601/
+[^intelEdison]: Intel Edison インテル社によって開発されたIoTデバイス向けのシングルボードコンピュータ。
+[^amazonDash]: Amazon dash Amazonが開発したWi-Fi接続された専用デバイスで、ボタンを押すだけで日用品や食料品などを注文できる。
+[^pepper]: Pepper https://www.softbank.jp/robot/pepper/
