@@ -129,7 +129,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
     * enebular[^enebular] AWS IoT agentを使用してラズパイのマルチモニター環境を制御
 * カメラ
     * ラズパイカメラからNDI[^ndi]送信
-* 制御（MQTT、WebSocket、DMX 、ArtNet 、NDI）
+* 制御（MQTT、WebSocket、DMX[^dmx]、ArtNet[^artnet]、NDI）
 * 無線（Wi-Fi、Bluetooth、Zigbee）
 
 [^ws2812b]: シリアル通信でRGB値が制御できる小型のマイコン内蔵LED。
@@ -138,17 +138,17 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 [^i2c]: 電子部品と通信する際に使用する端子で、センサーから計測した値を取得したり、ディスプレイに値 を表示したり、モーターなどを制御する際に使用します。SDAはデータの送受信、SCLは接続した電子部品同士の同期に使用されます。
 [^uart]: 電子部品や外部のコンピュータなどとデータのやり取りをする際に使用する端子で、TXはデータの送信、RXはデータの受信に使用されます。
 [^adc]: ADC（Analog-to-Digital Converter）アナログデジタル変換器。
-[^touchdegigner]: https://derivative.ca/
+[^touchdesigner]: https://derivative.ca/
 [^mqtt]: MQTT（Message Queuing Telemetry Transport）IoTやM2M向けに開発された軽量プロトコル。
 [^enebular]: https://www.enebular.com/ja/
 [^ndi]: NDI（Network Device Interface）NewTek社によって開発されたロイヤリティフリーのIPビデオ伝送方式。
-  照明や舞台効果を制御する為の通信プロトコル（通信手順、ルール）で、制御信号を発信するコントローラとその信号に反応する機器（デバイス）の通信方式を定める規格。
-  Artistic License社によって策定されたDMX信号をイーサネットを介して送受信するための通信プロトコル。
-  https://dotstud.io/blog/face-robot-making-maruko/
+[^dmx]: 照明や舞台効果を制御する為の通信プロトコル（通信手順、ルール）で、制御信号を発信するコントローラとその信号に反応する機器（デバイス）の通信方式を定める規格。
+[^artnet]: Artistic License社によって策定されたDMX信号をイーサネットを介して送受信するための通信プロトコル。
+
  
 
 ## 「Lチカ」の次のステップ
-これまで私が一番衝撃的だったのは「へっぽこまるこ」さんの「Lチカ」の次に「顔面ロボット 」の製作に取り組まれた事例です。見た目のインパクトが強く、とてもユニークな作品で、一度見たら絶対に忘れないと思います。
+これまで私が一番衝撃的だったのは「へっぽこまるこ」さんの「Lチカ」の次に「顔面ロボット[^facerobot]」の製作に取り組まれた事例です。見た目のインパクトが強く、とてもユニークな作品で、一度見たら絶対に忘れないと思います。
 
 * 初号機（あけみ）
 * 弐号機（お誕生日ケーキ）
@@ -166,3 +166,5 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 * ラジオ
 
 好きなことや、やりたいことがあれば第二歩目の選択は簡単かもしれませんが、もし迷った場合は身近な課題を解決したり、他の人が困っていることを助けるために試行錯誤してみてはいかがでしょうか。
+
+[^facerobot]: https://dotstud.io/blog/face-robot-making-maruko/
