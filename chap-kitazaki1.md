@@ -75,7 +75,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 
 さて、みなさんはモノづくりを始めるのにあたり最初の第一歩は「Lチカ[^LED]」が基本ですが、その次のステップをどうするか困ったり迷ったりしたことはありませんか。
 
-私の第二歩目は依頼や相談がきっかけで、IoT縛りの勉強会！IoTLT[^IoTLT]というイベントでAmazon Dash ButtonをハックしてPepperを操作するデモンストレーションを行ったり、Pepperが撮影した写真をAirPrint[^airprint]でプリンターから印刷する試作を行いました。
+私の第二歩目は依頼や相談がきっかけで、IoT縛りの勉強会！IoTLT[^IoTLT]というイベントでAmazon Dash Buttonをハック[^hack]してPepperを操作するデモンストレーションを行ったり、Pepperが撮影した写真をAirPrint[^airprint]でプリンターから印刷する試作を行いました。
 
 これまでの野良ハック活動で使用してきた要素技術を簡単に書き出してみます。
 
@@ -104,6 +104,6 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 [^microbit]: MicroBit  https://microbit.org/
 [^mdbt]: MDBT42Q https://www.raytac.com/product/ins.php?index_id=31
 [^LED]: LEDチカチカの略。Arduino 等のマイコン工作を始めるとき、最初に LED を点滅（チカチカ）させるプログラムで試すことが多いことから「LEDチカチカ」→「Lチカ」と呼ばれる。
-[^iotlt]: IoTLT https://iotlt.connpass.com/
-
+[^IoTLT]: IoTLT https://iotlt.connpass.com/
+[^hack]: 　物事を効率よくこなしたり質を上げたりするためのコツやテクニック。既存の制約を打破したり回避する創意工夫、その取り組み。
 [^airprint]: AppleのMac OS X Lion以降とiOS 4.2以降の機能で、無線LANを通してAirPrint対応プリンターもしくはWindows、macOS、GNU/Linux PCに接続している非対応プリンターに直接印刷できる機能。
