@@ -95,7 +95,7 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 [^Grove]: Seeed Technology社が開発したモジュール方式のコネクタが特徴の挿すだけで使えるGroveシステム。
 [^nefryBT]: NefryBT  https://dotstud.io/docs/nefrybt/
 [^twilite]: TWI-Lite https://mono-wireless.com/jp/products/TWE-LITE/index.html
-[^zigbee] Zigbee Allianceが策定した短距離無線通信規格の1つ。低コスト、低消費電力でワイヤレスセンサーネットワークを主目的とし、電池駆動可能な超小型機器への実装に向いている。
+[^zigbee]: Zigbee Allianceが策定した短距離無線通信規格の1つ。低コスト、低消費電力でワイヤレスセンサーネットワークを主目的とし、電池駆動可能な超小型機器への実装に向いている。
 [^gadgetrecesas]: がじぇっとるねさす https://www.renesas.com/jp/ja/products/gadget-renesas
 [^obniz]: obniz https://obniz.com/ja/
 [^m5stack]: M5Stack https://m5stack.com/
