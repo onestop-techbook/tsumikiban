@@ -28,7 +28,8 @@
     "CHAPS": [
       "chap-dummy.md",
       "chap-ohsawa0515.md",
-      "chap-kitazaki1.md"
+      "chap-kitazaki1.md",
+      "chap-oyakata-why.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
