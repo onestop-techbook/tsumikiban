@@ -1,6 +1,6 @@
 {
   "bookname": "Onestop-tumikiban",
-  "booktitle": "Onestop積み基板を作らないための電子工作入門",
+  "booktitle": "積み基板を作らないための電子工作入門",
   "aut": [],
   "language": "ja",
   "toc": true,
@@ -29,7 +29,8 @@
       "chap-dummy.md",
       "chap-ohsawa0515.md",
       "chap-kitazaki1.md",
-      "chap-oyakata-why.md"
+      "chap-oyakata-why.md",
+      "chap-continuous-output.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
