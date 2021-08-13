@@ -30,7 +30,8 @@
       "chap-ohsawa0515.md",
       "chap-kitazaki1.md",
       "chap-oyakata-why.md",
-      "chap-continuous-output.md"
+      "chap-continuous-output.md",
+      "Recipe-IoTCatFoodDispenser.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
