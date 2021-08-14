@@ -112,3 +112,119 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 [^ngrok]: ngrok https://dashboard.ngrok.com/user/signup
 [^linebot]: line Notify https://notify-bot.line.me/ja/
 
+## Node-REDフローとダッシュボード
+フローはenebularに公開しています[^noderedflow]ので、フロー作成を省略する場合はImportで取り込んでください。
+
+![Node-REDフロー全体](images/Recipe-IoTCatFoodDispenser/noderedall.png?scale=0.7)
+
+
+### リレースイッチフロー
+ダッシュボードのスイッチ「BUTTON」を押すとmsg.payloadに1が設定されてpi-gpiod outノード「リレースイッチ」がONになる。また、同時にdelayノードで1秒遅延させた後、changeノードでmsg.payloadに0が設定されてpi-gpiod outノード「リレースイッチ」がOFFになる。結果としてLUSMOのモーターが1秒間動作する。
+ 
+![リレーのフロー](images/Recipe-IoTCatFoodDispenser/relayflow.png?scale=0.7)
+
+
+### カメラ遠隔操作フロー
+ダッシュボードの「PAN / TILT」スライダーを左右に操作するとmsg.payloadに0〜100が設定されてchangeノードに入力される。changeノードで入力値を反転(100〜0)させた後、pi-gpiod outノード「PAN」または「TILT」に入力される。
+
+サーボモーターはパルス幅(Duty Cycle)に応じて回転軸の制御を行うため、pi-gpiod outノードのTypeは「Servo output」を設定し、Limitsは500〜2400μs(0.5〜2.4ms)[^SG-90spec]に設定する。changeノードで入力値を反転(100〜0)させるのはスライダーの動きとカメラマウントの動きを合わせるためです。
+
+![カメラとGPIOの接続](images/Recipe-IoTCatFoodDispenser/remotecam1.png?scale=0.7)
+
+![サーボ設定](images/Recipe-IoTCatFoodDispenser/servosetting.png?scale=0.7)
+
+
+[^noderedflow]: neko-no-moribito Flow by kitazaki published: Mar 5th 2019, 1:30 PM https://enebular.com/discover/flow/b6ffe2c9-ce5b-4896-b803-611b3ac890fd
+[^SG-90spec]:  SG-90サーボの仕様　http://akizukidenshi.com/download/ds/towerpro/SG90_a.pdf
+
+
+### 静止画
+ダッシュボードの「TAKE A PHOTO」を押すとカメラモジュールで撮った写真が表示される。ui_templateノードのHTMLコードにHTMLを入力する。
+
+![静止画の設定](images/Recipe-IoTCatFoodDispenser/photosetting.png?scale=0.7)
+
+```html
+<script>
+var value = "1";
+// or overwrite value in your callback function ...
+this.scope.action = function() { return value; }
+
+function updateF() {
+  var source = '/photo1.JPEG',
+  timestamp = (new Date()).getTime(),
+  newUrl = source + '?_=' + timestamp;
+  document.getElementById("photo").src = newUrl;
+}
+</script>
+
+<md-button ng-click="send({payload:action()})" onclick="setTimeout(updateF, 2500);" style="padding:20px; margin-bottom: 20px;" >
+ <ui-icon icon="camera"></ui-icon>
+ Take a photo<br>
+</md-button>
+
+<div style="margin-bottom:0px;">
+ <img src="/photo1.JPEG" id="photo" width="100%" height="100%">
+</div>
+```
+
+写真の保存先のディレクトリを作成し、Node-RED設定ファイル(2つ)にディレクトリの情報を追加する。(enebularユーザで実施する)
+
+ディレクトリの作成 
+```sh
+$ mkdir /home/enebular/Pictures
+```
+
+設定ファイル(通常起動用)
+/home/enebular/enebular-runtime-agent/node-red/.node-red-config/settings.js
+
+```sh
+const fs = require('fs')
+const path = require('path')
+
+module.exports = {
+  userDir: __dirname,
+  flowFile: 'flows.json',
+  httpStatic: '/home/enebular/Pictures/',　　　　　　　　　　　　　(←追加)
+  httpAdminRoot: false
+};
+```
+
+設定ファイル(enebular editor起動用)
+/home/enebular/enebular-runtime-agent/node-red/.node-red-config/
+```sh
+enebular-editor-settings.js
+const fs = require('fs')
+const path = require('path')
+
+module.exports = {
+  userDir: __dirname,
+  flowFile: 'flows.json',
+  verbose: true,
+  httpStatic: '/home/enebular/Pictures/',　　　　　　　　　　　　　(←追加)
+  httpAdminRoot: '/',
+  httpNodeRoot: '/',
+  storageModule: require('../enebularStorageModule'),
+  credentialSecret: false,
+  editorTheme: {
+	userMenu: false,
+	page: {
+  	title: '',
+  	favicon: path.join(__dirname, 'img', 'favicon.ico'),
+  	css: path.join(__dirname, 'css', 'index.css')
+	},
+	header: {
+  	title: '',
+  	image: path.join(__dirname, 'img', 'enebular_logo.svg')
+	},
+	deployButton: {
+  	type: 'simple',
+  	label: 'Save'
+	},
+	palette: {
+  	editable: true
+	}
+  }
+}
+```
+
+
