@@ -2,7 +2,7 @@
 
 IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際のペットのエサやりどうしてる？！」という話題になったことを思い出した。うちにも野良ネコ(ゆき)が一匹いるので旅行の際はいつも悩んでいる。
 
-![ゆき](images/Recipe-IoTCatFoodDispenser/cat.png?scale=0.3)
+![ゆき](images/Recipe-IoTCatFoodDispenser/cat.png?scale=0.5)
 
 選択肢としては、
 
@@ -36,7 +36,7 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 
 [^nat]: 家庭内ネットワーク(LAN)とインターネット(WAN)の間に境界(NAT)が存在し、セキュリティを確保する目的でWAN→LANのアクセスは基本的に制限されている。
 
-![技術要素と構成](images/Recipe-IoTCatFoodDispenser/components.png?scale=0.3)
+![技術要素と構成](images/Recipe-IoTCatFoodDispenser/components.png?scale=0.7)
 
 ### 材料
 * LUSMO x 1
@@ -55,6 +55,6 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 ### 配線
 ラズパイは有線LANまたは無線Wi-Fiでネットワークへ接続する。カメラモジュールはラズパイのCAMERA端子へ接続し、サーボモーターとGroveリレーはラズパイのGPIO端子へ接続する。
 
-![結線ブロック図](images/Recipe-IoTCatFoodDispenser/connection.png?scale=0.3)
+![結線ブロック図](images/Recipe-IoTCatFoodDispenser/connection.png?scale=0.7)
 
 次
