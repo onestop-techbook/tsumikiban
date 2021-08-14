@@ -129,7 +129,7 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 
 サーボモーターはパルス幅(Duty Cycle)に応じて回転軸の制御を行うため、pi-gpiod outノードのTypeは「Servo output」を設定し、Limitsは500〜2400μs(0.5〜2.4ms)[^SG-90spec]に設定する。changeノードで入力値を反転(100〜0)させるのはスライダーの動きとカメラマウントの動きを合わせるためです。
 
-![カメラとGPIOの接続](images/Recipe-IoTCatFoodDispenser/remotecam1.png?scale=0.7)
+![カメラとGPIOの接続](images/Recipe-IoTCatFoodDispenser/remotecam.png?scale=0.7)
 
 ![サーボ設定](images/Recipe-IoTCatFoodDispenser/servosetting.png?scale=0.7)
 
