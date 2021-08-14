@@ -125,30 +125,30 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 ![Node-REDフロー全体](images/Recipe-IoTCatFoodDispenser/noderedall.png?scale=0.7)
 
 
-### リレースイッチフロー
+### リレースイッチフローの設定
 ダッシュボードのスイッチ「BUTTON」を押すとmsg.payloadに1が設定されてpi-gpiod outノード「リレースイッチ」がONになる。また、同時にdelayノードで1秒遅延させた後、changeノードでmsg.payloadに0が設定されてpi-gpiod outノード「リレースイッチ」がOFFになる。結果としてLUSMOのモーターが1秒間動作する。
  
 ![リレーのフロー](images/Recipe-IoTCatFoodDispenser/relayflow.png?scale=0.7)
 
 
-### カメラ遠隔操作フロー
+### カメラ遠隔操作フローの設定
 ダッシュボードの「PAN / TILT」スライダーを左右に操作するとmsg.payloadに0〜100が設定されてchangeノードに入力される。changeノードで入力値を反転(100〜0)させた後、pi-gpiod outノード「PAN」または「TILT」に入力される。
 
 サーボモーターはパルス幅(Duty Cycle)に応じて回転軸の制御を行うため、pi-gpiod outノードのTypeは「Servo output」を設定し、Limitsは500〜2400μs(0.5〜2.4ms)[^SG-90spec]に設定する。changeノードで入力値を反転(100〜0)させるのはスライダーの動きとカメラマウントの動きを合わせるためです。
 
 ![カメラとGPIOの接続](images/Recipe-IoTCatFoodDispenser/remotecam.png?scale=0.6)
 
-![サーボ設定](images/Recipe-IoTCatFoodDispenser/servosetting.png?scale=0.6)
+![サーボ設定](images/Recipe-IoTCatFoodDispenser/servosetting.png?scale=0.4)
 
 
 [^noderedflow]: neko-no-moribito Flow by kitazaki published: Mar 5th 2019, 1:30 PM https://enebular.com/discover/flow/b6ffe2c9-ce5b-4896-b803-611b3ac890fd
 [^SG-90spec]:  SG-90サーボの仕様　http://akizukidenshi.com/download/ds/towerpro/SG90_a.pdf
 
 
-### 静止画
+### 静止画の設定
 ダッシュボードの「TAKE A PHOTO」を押すとカメラモジュールで撮った写真が表示される。ui_templateノードのHTMLコードにHTMLを入力する。
 
-![静止画の設定](images/Recipe-IoTCatFoodDispenser/photosetting.png?scale=0.6)
+![静止画の設定](images/Recipe-IoTCatFoodDispenser/photosetting.png?scale=0.4)
 
 ```html
 <script>
@@ -242,24 +242,24 @@ module.exports = {
 ### 外部公開、URL通知
 ngrokは無償プランではURLが毎回変わり、8時間で無効化されます。外出先からダッシュボードを確認するためにLINE Notifyを利用してURLを通知する。LINE NotifyノードのAccessTokenにアクセストークンを入力する。
 
-![Line notifyの設定](images/Recipe-IoTCatFoodDispenser/linenotify.png?scale=0.7)
+![Line notifyの設定](images/Recipe-IoTCatFoodDispenser/linenotify.png?scale=0.5)
 
 
-### 動画
+### 動画の設定
 ダッシュボードの「START」を押すとmulti-decoderノードがuv4l-raspicamと通信を行い動画(Motion JPEG)データを取得する。取得したデータをbase64ノードでエンコードし、ui_templateノードでHTMLへエンコードされたデータを埋め込むことでダッシュボードに動画が表示される。ダッシュボードの「STOP」を押すとchangeノードでmsg.stopにtrueが設定されてmulti-decoderノードの動作が停止する。
   
-![動画の設定](images/Recipe-IoTCatFoodDispenser/moviesetting.png?scale=0.7)
+![動画の設定](images/Recipe-IoTCatFoodDispenser/moviesetting.png?scale=0.6)
 
 
 multipart-decoderノードのURLに
 http://localhost:8090/stream/video.mjpeg
 を入力する。
  
-![multiPart-decoderの設定](images/Recipe-IoTCatFoodDispenser/decodersetting.png?scale=0.7)
+![multiPart-decoderの設定](images/Recipe-IoTCatFoodDispenser/decodersetting.png?scale=0.5)
 
 
 
-![ui_templateノードのHTMLコードにHTMLを入力する](images/Recipe-IoTCatFoodDispenser/uitemplate.png?scale=0.7)
+![ui_templateノードのHTMLコードにHTMLを入力する](images/Recipe-IoTCatFoodDispenser/uitemplate.png?scale=0.5)
 
 ```html
 <img width="16" height="16" src="data:image/jpg;base64,{{msg.payload}}" />
@@ -272,4 +272,4 @@ http://localhost:8090/stream/video.mjpeg
 
 カメラマウントにネコじゃらしを付けてみました。サーボモーターを動かしてカメラマウントを上下左右に振るとネコが寄ってくるので、タイミングを合わせてカメラで写真を撮ったり、動画で遊んでいる様子を見ることができる。やり過ぎてネコに装置を破壊されないようにくれぐれもご注意を！
 
-![ネコじゃらしをつけてみた](images/Recipe-IoTCatFoodDispenser/moving.png?scale=0.7)
+![ネコじゃらしをつけてみた](images/Recipe-IoTCatFoodDispenser/moving.png?scale=0.6)
