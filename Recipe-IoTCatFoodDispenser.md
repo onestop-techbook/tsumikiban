@@ -56,3 +56,5 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 ラズパイは有線LANまたは無線Wi-Fiでネットワークへ接続する。カメラモジュールはラズパイのCAMERA端子へ接続し、サーボモーターとGroveリレーはラズパイのGPIO端子へ接続する。
 
 ![結線ブロック図](images\Recipe-IoTCatFoodDispenser\connection.png?scale=0.3)
+
+次
