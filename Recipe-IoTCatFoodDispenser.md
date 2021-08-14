@@ -57,4 +57,58 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 
 ![結線ブロック図](images/Recipe-IoTCatFoodDispenser/connection.png?scale=0.7)
 
-次
+![GPIO端子の結線](images/Recipe-IoTCatFoodDispenser/GPIO.png?scale=0.7)
+
+### LUSMO内の配線
+ペットフードを入れるトレーを外し、(+)ドライバーでネジ(5箇所)を緩めてカバーを外す。
+
+![LISMOの分解1](images/Recipe-IoTCatFoodDispenser/LISMO1.png?scale=0.7)
+
+![LISMOの分解2](images/Recipe-IoTCatFoodDispenser/LISMO2.png?scale=0.7)
+
+モーターの(-)電極と乾電池の(-)電極へワニ口クリップコードを接続し、コードの反対側をGrove リレーのスクリューターミナルへ接続する。スクリューターミナルは(-)ドライバーで開け締めを行う。
+
+![モーターの接続](images/Recipe-IoTCatFoodDispenser/motor1.png?scale=0.7)
+
+![リレーへの接続](images/Recipe-IoTCatFoodDispenser/relay1.png?scale=0.7)
+
+
+### 使用するソフトウェア
+* OS (Raspbian Stretch with desktop 2018-11-13)
+* Node-RED v0.18.6-alpha.8 (enebular)
+* Node-REDの追加ノード (メニュー → パレットの管理から行う)
+    * node-red-contrib-camerapi
+    * node-red-contrib-line-messaging-api
+    * node-red-contrib-multipart-stream-decoder
+    * node-red-contrib-ngrok
+    * node-red-dashboard
+    * node-red-node-base64
+    * node-red-node-pi-gpiod
+* uv4l-raspicam
+
+インストール手順 ($ はコマンドプロンプト)
+
+```sh
+$ curl http://www.linux-projects.org/listing/uv4l_repo/lpkey.asc | sudo apt-key add -
+$ echo 'deb http://www.linux-projects.org/listing/uv4l_repo/raspbian/stretch stretch main' | sudo tee -a /etc/apt/sources.list
+$ sudo apt-get update
+$ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
+```
+
+### 利用するサービス
+* AWS IoT Core[^aws] 
+→AWS IoT用IAMユーザーを作成し、アクセスキーIDとシークレットアクセスキーを取得する。
+* enebular [^enebular]
+→アカウントを作成し、Projectとflowを作成する。ラズパイへenebular AWS IoT agentをインストール[^AWSonRP]し、enebular editorからflowを編集/デプロイできるようにする。
+* ngrok[ngrok]
+→アカウントを作成し、authトークンを取得する。
+* LINE Notify[^linebot] 
+→アカウントを作成し、アクセストークンを発行する。
+
+
+[^aws]: AWS IoT Core https://aws.amazon.com/jp/iot-core/
+[^enebular]: enebular  https://enebular.com
+[^AWSonRP]: 参考手順 https://qiita.com/TakedaHiromasa/items/b6828e4ac434bf99325d
+[^ngrok]: ngrok https://dashboard.ngrok.com/user/signup
+[^linebot]: line Notify https://notify-bot.line.me/ja/
+
