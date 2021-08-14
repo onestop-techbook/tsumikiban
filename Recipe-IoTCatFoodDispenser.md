@@ -175,7 +175,10 @@ $ mkdir /home/enebular/Pictures
 ```
 
 設定ファイル(通常起動用)
+```
 /home/enebular/enebular-runtime-agent/node-red/.node-red-config/settings.js
+```
+
 
 ```sh
 const fs = require('fs')
@@ -190,7 +193,10 @@ module.exports = {
 ```
 
 設定ファイル(enebular editor起動用)
+```
 /home/enebular/enebular-runtime-agent/node-red/.node-red-config/
+```
+
 ```sh
 enebular-editor-settings.js
 const fs = require('fs')
