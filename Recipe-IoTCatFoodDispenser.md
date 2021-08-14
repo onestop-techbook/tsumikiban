@@ -57,20 +57,20 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 
 ![結線ブロック図](images/Recipe-IoTCatFoodDispenser/connection.png?scale=0.7)
 
-![GPIO端子の結線](images/Recipe-IoTCatFoodDispenser/GPIO.png?scale=0.7)
+![GPIO端子の結線](images/Recipe-IoTCatFoodDispenser/GPIO.png?scale=0.6)
 
 ### LUSMO内の配線
 ペットフードを入れるトレーを外し、(+)ドライバーでネジ(5箇所)を緩めてカバーを外す。
 
-![LISMOの分解1](images/Recipe-IoTCatFoodDispenser/LISMO1.png?scale=0.7)
+![LISMOの分解1](images/Recipe-IoTCatFoodDispenser/LISMO1.png?scale=0.6)
 
-![LISMOの分解2](images/Recipe-IoTCatFoodDispenser/LISMO2.png?scale=0.7)
+![LISMOの分解2](images/Recipe-IoTCatFoodDispenser/LISMO2.png?scale=0.6)
 
-モーターの(-)電極と乾電池の(-)電極へワニ口クリップコードを接続し、コードの反対側をGrove リレーのスクリューターミナルへ接続する。スクリューターミナルは(-)ドライバーで開け締めを行う。
+モーターの(-)電極と乾電池の(-)電極へワニ口クリップコードを接続し、コードの反対側をGrove リレーのスクリューターミナルへ接続する。スクリューターミナルはマイナスドライバーで開け締めを行う。
 
-![モーターの接続](images/Recipe-IoTCatFoodDispenser/motor1.png?scale=0.7)
+![モーターの接続](images/Recipe-IoTCatFoodDispenser/motor1.png?scale=0.6)
 
-![リレーへの接続](images/Recipe-IoTCatFoodDispenser/relay1.png?scale=0.7)
+![リレーへの接続](images/Recipe-IoTCatFoodDispenser/relay1.png?scale=0.5)
 
 
 ### 使用するソフトウェア
@@ -97,12 +97,19 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 
 ### 利用するサービス
 * AWS IoT Core[^aws] 
+
 →AWS IoT用IAMユーザーを作成し、アクセスキーIDとシークレットアクセスキーを取得する。
+
 * enebular[^enebular]
+
 →アカウントを作成し、Projectとflowを作成する。ラズパイへenebular AWS IoT agentをインストール[^AWSonRP]し、enebular editorからflowを編集/デプロイできるようにする。
+
 * ngrok[^ngrok]
+
 →アカウントを作成し、authトークンを取得する。
+
 * LINE Notify[^linebot] 
+
 →アカウントを作成し、アクセストークンを発行する。
 
 
@@ -129,9 +136,9 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 
 サーボモーターはパルス幅(Duty Cycle)に応じて回転軸の制御を行うため、pi-gpiod outノードのTypeは「Servo output」を設定し、Limitsは500〜2400μs(0.5〜2.4ms)[^SG-90spec]に設定する。changeノードで入力値を反転(100〜0)させるのはスライダーの動きとカメラマウントの動きを合わせるためです。
 
-![カメラとGPIOの接続](images/Recipe-IoTCatFoodDispenser/remotecam.png?scale=0.7)
+![カメラとGPIOの接続](images/Recipe-IoTCatFoodDispenser/remotecam.png?scale=0.6)
 
-![サーボ設定](images/Recipe-IoTCatFoodDispenser/servosetting.png?scale=0.7)
+![サーボ設定](images/Recipe-IoTCatFoodDispenser/servosetting.png?scale=0.6)
 
 
 [^noderedflow]: neko-no-moribito Flow by kitazaki published: Mar 5th 2019, 1:30 PM https://enebular.com/discover/flow/b6ffe2c9-ce5b-4896-b803-611b3ac890fd
@@ -141,7 +148,7 @@ $ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
 ### 静止画
 ダッシュボードの「TAKE A PHOTO」を押すとカメラモジュールで撮った写真が表示される。ui_templateノードのHTMLコードにHTMLを入力する。
 
-![静止画の設定](images/Recipe-IoTCatFoodDispenser/photosetting.png?scale=0.7)
+![静止画の設定](images/Recipe-IoTCatFoodDispenser/photosetting.png?scale=0.6)
 
 ```html
 <script>
@@ -157,7 +164,8 @@ function updateF() {
 }
 </script>
 
-<md-button ng-click="send({payload:action()})" onclick="setTimeout(updateF, 2500);" style="padding:20px; margin-bottom: 20px;" >
+<md-button ng-click="send({payload:action()})" onclick="setTimeout(updateF, 2500);
+" style="padding:20px; margin-bottom: 20px;" >
  <ui-icon icon="camera"></ui-icon>
  Take a photo<br>
 </md-button>
@@ -169,17 +177,15 @@ function updateF() {
 
 写真の保存先のディレクトリを作成し、Node-RED設定ファイル(2つ)にディレクトリの情報を追加する。(enebularユーザで実施する)
 
-ディレクトリの作成 
+#### ディレクトリの作成 
 
 ```sh
 $ mkdir /home/enebular/Pictures
 ```
 
-設定ファイル(通常起動用)
+#### 設定ファイル(通常起動用)
 
-```
 /home/enebular/enebular-runtime-agent/node-red/.node-red-config/settings.js
-```
 
 
 ```sh
@@ -194,10 +200,8 @@ module.exports = {
 };
 ```
 
-設定ファイル(enebular editor起動用)
-```
+#### 設定ファイル(enebular editor起動用)
 /home/enebular/enebular-runtime-agent/node-red/.node-red-config/
-```
 
 ```sh
 enebular-editor-settings.js
@@ -257,9 +261,7 @@ http://localhost:8090/stream/video.mjpeg
 
 ![ui_templateノードのHTMLコードにHTMLを入力する](images/Recipe-IoTCatFoodDispenser/uitemplate.png?scale=0.7)
 
-```html
 <img width="16" height="16" src="data:image/jpg;base64,{{msg.payload}}" />
-```
  
 ![changeノードでmsg.stopにtrueを設定する](images/Recipe-IoTCatFoodDispenser/stop.png?scale=0.7) 
 
