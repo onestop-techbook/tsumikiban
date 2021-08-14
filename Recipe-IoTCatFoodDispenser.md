@@ -86,4 +86,29 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
     * node-red-node-pi-gpiod
 * uv4l-raspicam
 
+### インストール手順 ($ はコマンドプロンプト)
+
+```sh
+$ curl http://www.linux-projects.org/listing/uv4l_repo/lpkey.asc | sudo apt-key add -
+$ echo 'deb http://www.linux-projects.org/listing/uv4l_repo/raspbian/stretch stretch main' | sudo tee -a /etc/apt/sources.list
+$ sudo apt-get update
+$ sudo apt-get install uv4l uv4l-raspicam uv4l-raspicam-extras
+```
+
+### 利用するサービス
+* AWS IoT Core[^aws] 
+→AWS IoT用IAMユーザーを作成し、アクセスキーIDとシークレットアクセスキーを取得する。
+* enebular[^enebular]
+→アカウントを作成し、Projectとflowを作成する。ラズパイへenebular AWS IoT agentをインストール[^AWSonRP]し、enebular editorからflowを編集/デプロイできるようにする。
+* ngrok[^ngrok]
+→アカウントを作成し、authトークンを取得する。
+* LINE Notify[^linebot] 
+→アカウントを作成し、アクセストークンを発行する。
+
+
+[^aws]: AWS IoT Core https://aws.amazon.com/jp/iot-core/
+[^enebular]: enebular  https://enebular.com
+[^AWSonRP]: 参考手順 https://qiita.com/TakedaHiromasa/items/b6828e4ac434bf99325d
+[^ngrok]: ngrok https://dashboard.ngrok.com/user/signup
+[^linebot]: line Notify https://notify-bot.line.me/ja/
 
