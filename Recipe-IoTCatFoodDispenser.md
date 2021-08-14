@@ -244,7 +244,7 @@ ngrokは無償プランではURLが毎回変わり、8時間で無効化され�
 ### 動画
 ダッシュボードの「START」を押すとmulti-decoderノードがuv4l-raspicamと通信を行い動画(Motion JPEG)データを取得する。取得したデータをbase64ノードでエンコードし、ui_templateノードでHTMLへエンコードされたデータを埋め込むことでダッシュボードに動画が表示される。ダッシュボードの「STOP」を押すとchangeノードでmsg.stopにtrueが設定されてmulti-decoderノードの動作が停止する。
   
-![動画の設定](images/Recipe-IoTCatFoodDispenser/movie.png?scale=0.7)
+![動画の設定](images/Recipe-IoTCatFoodDispenser/moviesetting.png?scale=0.7)
 
 
 multipart-decoderノードのURLに
@@ -254,16 +254,15 @@ http://localhost:8090/stream/video.mjpeg
 ![multiPart-decoderの設定](images/Recipe-IoTCatFoodDispenser/decodersetting.png?scale=0.7)
 
 
-。
+
 ![ui_templateノードのHTMLコードにHTMLを入力する](images/Recipe-IoTCatFoodDispenser/uitemplate.png?scale=0.7)
-HTMLコード
+
 ```html
 <img width="16" height="16" src="data:image/jpg;base64,{{msg.payload}}" />
 ```
-
  
-。
 ![changeノードでmsg.stopにtrueを設定する](images/Recipe-IoTCatFoodDispenser/stop.png?scale=0.7) 
+
 ## まとめ
 
 カメラマウントにネコじゃらしを付けてみました。サーボモーターを動かしてカメラマウントを上下左右に振るとネコが寄ってくるので、タイミングを合わせてカメラで写真を撮ったり、動画で遊んでいる様子を見ることができる。やり過ぎてネコに装置を破壊されないようにくれぐれもご注意を！
