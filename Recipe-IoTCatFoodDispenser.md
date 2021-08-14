@@ -261,7 +261,10 @@ http://localhost:8090/stream/video.mjpeg
 
 ![ui_templateノードのHTMLコードにHTMLを入力する](images/Recipe-IoTCatFoodDispenser/uitemplate.png?scale=0.7)
 
+```html
 <img width="16" height="16" src="data:image/jpg;base64,{{msg.payload}}" />
+```
+
  
 ![changeノードでmsg.stopにtrueを設定する](images/Recipe-IoTCatFoodDispenser/stop.png?scale=0.7) 
 
