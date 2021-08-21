@@ -26,7 +26,6 @@
   "catalog": {
     "PREDEF": ["preface.re"],
     "CHAPS": [
-      "chap-dummy.md",
       "chap-ohsawa0515.md",
       "chap-kitazaki1.md",
       "chap-oyakata-why.md",
