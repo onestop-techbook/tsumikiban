@@ -14,61 +14,61 @@
 ## 積み基板遍歴
 入手したきっかけを思い出しながら自宅の「積み基板」をリストアップすると、以下に列挙するボードが目に入りましたが、これ以外にもっとあるかもしれません。(汗;
 
-* ラズパイ[^rasPi] 大量
+#### ラズパイ[^rasPi] 大量
 
 Linux系つながりで初期から使い始める。ソーシャルロボット「マグボット 」[^mugbot]の展示[^blog]のために大量購入する。主催するハンズオンイベントで使用。DonkeyCar[^donkeycar]走行会[^donkeycarevent]で使用。
 
-* Intel Edison[^intelEdison]
+#### Intel Edison[^intelEdison]
 
-Linux系つながりから使い始める。Amazon Dash Button[^amazonDash]とPepper[^pepper]との連携で使用。当時はWi-FI＋Bluetooth機能で一択。残念ながら製造中止になる。
+Linux系つながりから使い始める。Amazon Dash Button[^amazonDash]とPepper[^pepper]との連携で使用。当時はWi-Fi＋Bluetooth機能で一択。残念ながら製造中止になる。
 
-* Wio Node （ESP8266）[^wioNode]
+#### Wio Node （ESP8266）[^wioNode]
 
 野良ハック活動初期のメイン基板として使用。Wi-Fi機能とGrove[^Grove]コネクタを使用。
 
-* ESP32 Dev Board
+#### ESP32 Dev Board
 
 ESP8266の後継チップとして登場。Wi-Fi＋Bluetooth機能がついていることが話題になる。
 
-* NefryBT[^nefryBT]
+#### NefryBT[^nefryBT]
 
 FRISKサイズのマイコンデバイスNefryの後継として登場。ESP32チップが搭載されている。
 
-* TWE-Lite[^twilite] （Zigbee[^zigbee]）
+#### TWELITE[^twilite] とZigbee[^zigbee]
 屋外で無線マイコンモジュールを使用するワインIoT案件で、省電力・通信距離が決め手となって選択。電池駆動のメッシュ通信でアンカーにはラズパイを使用。
 
-* がじぇっとるねさす[^gadgetrecesas] 
+#### がじぇっとるねさす[^gadgetrecesas] 
 
 「ピンクのボード」 コンテストへ応募するためにGR-COTTONやGR-LYCHEEを購入。少しだけかじる。
 
-* Arduino UNO（SORACOMイベントの参加賞の抽選でもらう。）
-* Arduino Pro Micro（自作キーボードに使用。）
-* Arduino UNO（中華製）（作品展示、バラマキ用に購入。）
-* obniz （ESP32）[^obniz]
+#### Arduino UNO（SORACOMイベントの参加賞の抽選でもらう。）
+#### Arduino Pro Micro（自作キーボードに使用。）
+#### Arduino UNO（中華製）（作品展示、バラマキ用に購入。）
+#### obniz （ESP32）[^obniz]
 
 ウェブ系つながりから使い始める。組み込みデバイスのコーディングが不要なのが特徴。
 
-* M5Stack （ESP32）[^m5stack]
+#### M5Stack （ESP32）[^m5stack]
 
 ガワ（ケース）がしっかりしていて、安価で種類が豊富。日本のコミュニティが盛り上がっている。
 
-* Jetson （Nano、Xavier NX）[^jetson]
+#### Jetson （Nano、Xavier NX）[^jetson]
 
 ラズパイ＋GPU、NVIDIAグラフィックボードの印象から使い始める。
 
-* Makeblock mBot[^makeblock]
+#### Makeblock mBot[^makeblock]
 
 子供向け教育教材として購入。中身はArduino。
 
-* Micro:bit[^microbit] 
+#### Micro:bit[^microbit] 
 
 子供に渡す目的で購入。Nordic nRF51822チップが搭載されている。
 
-* MDBT42Q[^mdbt] 
+#### MDBT42Q[^mdbt] 
 
 Nordic nRF52832チップが搭載されている。野良LEDバッジ初号機で使用。
 
-* ラズパイPico
+#### ラズパイPico
 
 microPython、circuitPythonなどのスクリプト言語で開発できる。
 
@@ -198,7 +198,9 @@ microPython、circuitPythonなどのスクリプト言語で開発できる。
 
 [^partypeople]: パーティ・ピープル（party people）の音略。パーティ好きな人々や盛り上がることを好む人を意味する。
 
-モーターの延長線で、ギヤボックス付きのモーターを使用したり、モーターの種類を変更してPWMで制御するサーボモーターを使用するとできることが広がります。
+モーターの延長線で、ギヤボックス付きのモーターを使用したり、モーターの種類を変更してPWM[^pwm]で制御するサーボモーターを使用するとできることが広がります。
+
+[^pwm]: Pulse Width Modulation 矩形パルスの時間幅を変化させる変調、制御方法。別章に詳細があります。
 
 * ディスペンサー系
     * ドリンクディスペンサーをIoT化
