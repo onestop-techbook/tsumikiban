@@ -34,7 +34,8 @@
       "chap-tools.md",
       "chap-knowledge.md",
       "chap-continuous-output.md",
-      "Recipe-IoTCatFoodDispenser.md"
+      "Recipe-IoTCatFoodDispenser.md",
+      "chap-hiyoko.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
