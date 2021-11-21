@@ -66,6 +66,19 @@ Podcast生やすお兄さんとして、複数のPodcastを掛け持ちして配
 //}
 表参道にあるIT企業のインフラエンジニアとして、開発基盤の改善、AWSとGCPとのマルチクラウド化、クラウドコスト最適化に従事し、最近はR&D部署に移動しDevOpsエンジニアやっています。
 
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/hiyoko.png}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        hiyoko Prod. せかいい @JeweL\_Flash https://twitter.com/Jewel\_Flash\\
+        \end{minipage}
+    \hspace{1ex} %コメントとアイコンの間を空けて体裁を整える
+//}
+普段は２次元のイラストをファボリツばかりしているhiyokoと申します。名前の由来は親方様から送られてきた私の原稿の修正ファイルの名前がchap-hiyoko.mdだったことが由来で、深い意味はありません。
 
 == 表紙イラスト・デザイン　
 

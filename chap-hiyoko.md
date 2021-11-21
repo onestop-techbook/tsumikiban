@@ -55,6 +55,10 @@ ESP-WROOM-02と気象庁の予報で作りたいお天気ライト
 
 私の手持ちの電源は5vと12vは簡単に出せるのですが、3.3Vの電源基板やレギュレータ、安定化電源などを持っておらず、3VのACアダプタは紛失したので、このプロジェクトはまたしばらく保留とすることにしました。そのうちまたチャレンジしたいと思います。
 
+このままでは少々悔しいので、作った（つくり途中）の全体を載せておきます。
+
+![傘センサのお姿](images/chap-hiyoko/IMG_3535_no-exif.jpg?scale=0.5)
+
 ## 参考文献
 
 CL(2015)『ESP-WROOM-02で玄関お出かけ天気カラー照明灯 - M.C.P.C. (Mamesibori Creation Plus Communication)』https://cl.hatenablog.com/entry/esp-wroom-02-weather-light (2021年11月19日閲覧)
