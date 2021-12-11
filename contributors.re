@@ -80,6 +80,24 @@ Podcast生やすお兄さんとして、複数のPodcastを掛け持ちして配
 //}
 普段は２次元のイラストをファボリツばかりしているhiyokoと申します。名前の由来は親方様から送られてきた私の原稿の修正ファイルの名前がchap-hiyoko.mdだったことが由来で、深い意味はありません。
 
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/ditflame_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        ふーれむ @ditflame https://twitter.com/ditflame\\
+        Qiitaでちょこちょこ技術ネタ書いたりしてます。 https://qiita.com/ditflame\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+大阪在住。SIerから社内SEになりましたが現在転職検討中…
+アマチュア無線に浸かりきっていた頃を思い出して書いてみました。なつい。
+
+　
+
 == 表紙イラスト・デザイン　
 
 //embed{
