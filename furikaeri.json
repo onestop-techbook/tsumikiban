@@ -36,6 +36,7 @@
       "chap-compatibility.md",
       "chap-continuous-output.md",
       "Recipe-IoTCatFoodDispenser.md",
+      "chap-smart-phone.md",
       "chap-hiyoko.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
