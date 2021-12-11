@@ -62,9 +62,9 @@ IoTLTでの懇親会で「外出や出張・旅行で家を不在にする際の
 ### LUSMO内の配線
 ペットフードを入れるトレーを外し、(+)ドライバーでネジ(5箇所)を緩めてカバーを外す。
 
-![LISMOの分解1](images/Recipe-IoTCatFoodDispenser/LISMO1.png?scale=0.6)
+![LUSMOの分解1](images/Recipe-IoTCatFoodDispenser/LISMO1.png?scale=0.6)
 
-![LISMOの分解2](images/Recipe-IoTCatFoodDispenser/LISMO2.png?scale=0.6)
+![LUSMOの分解2](images/Recipe-IoTCatFoodDispenser/LISMO2.png?scale=0.6)
 
 モーターの(-)電極と乾電池の(-)電極へワニ口クリップコードを接続し、コードの反対側をGrove リレーのスクリューターミナルへ接続する。スクリューターミナルはマイナスドライバーで開け締めを行う。
 
