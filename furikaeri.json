@@ -39,7 +39,8 @@
       "Recipe-IoTCatFoodDispenser.md",
       "chap-smart-phone.md",
       "chap-hiyoko.md",
-      "chap-mofu.md"
+      "chap-mofu.md",
+      "chap-erukiti.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
