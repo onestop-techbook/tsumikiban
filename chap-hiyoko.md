@@ -1,8 +1,6 @@
-# とある初心者の動的Lチカ（Blink）
+# とある初心者の動的Lチカ（Blink）―ESP32と気象庁データでお天気ライト―
 
-hiyoko@Jewel_Flash
-
-ESP-WROOM-02と気象庁の予報で作りたいお天気ライト
+hiyoko Prod. せかいい
 
 ## はじめに
 
