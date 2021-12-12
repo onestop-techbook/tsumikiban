@@ -1,6 +1,6 @@
 # とある初心者の動的Lチカ（Blink）
 
-hiyoko@JeweL_Flash
+hiyoko@Jewel_Flash
 
 ESP-WROOM-02と気象庁の予報で作りたいお天気ライト
 

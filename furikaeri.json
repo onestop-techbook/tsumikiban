@@ -6,10 +6,10 @@
   "toc": true,
   "rights": "(C) 2021　親方Project",
   "colophon": true,
-  "history": [["2021-11-10 電子版　初版"]],
+  "history": [["2021-12-31 電子版　初版"]],
   "pbl": "親方Project",
   "edt": "親方Project　@oyakata2438",
-  "date": "2021-11-10",
+  "date": "2021-12-31",
   "secnolevel": 3,
   "titlepage": true,
   "review_version": 3.0,
@@ -26,9 +26,8 @@
   "catalog": {
     "PREDEF": ["preface.re"],
     "CHAPS": [
-      "chap-ohsawa0515.md",
-      "chap-kitazaki1.md",
       "chap-oyakata-why.md",
+      "chap-ohsawa0515.md",
       "chap-counter-for-why.md",
       "chap-oyakata-technicalproblem.md",
       "chap-tools.md",
@@ -36,9 +35,11 @@
       "chap-compatibility.md",
       "chap-powersupply.md",
       "chap-continuous-output.md",
+      "chap-kitazaki1.md",
       "Recipe-IoTCatFoodDispenser.md",
       "chap-smart-phone.md",
       "chap-hiyoko.md"
+      "chap-mofu.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
