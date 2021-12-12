@@ -37,7 +37,8 @@
       "chap-continuous-output.md",
       "chap-kitazaki1.md",
       "Recipe-IoTCatFoodDispenser.md",
-      "chap-hiyoko.md",
+      "chap-smart-phone.md",
+      "chap-hiyoko.md"
       "chap-mofu.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
