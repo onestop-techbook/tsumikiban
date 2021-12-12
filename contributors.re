@@ -57,7 +57,7 @@
         \includegraphics[width=.75\linewidth]{images/contributors/hiyoko.png}
     \end{minipage}
     \begin{minipage}{.89\linewidth}
-        hiyoko Prod. せかいい @JeweL\_Flash https://twitter.com/Jewel\_Flash\\
+        hiyoko Prod. せかいい @Jewel\_Flash https://twitter.com/Jewel\_Flash\\
         \end{minipage}
     \hspace{1ex} %コメントとアイコンの間を空けて体裁を整える
 //}

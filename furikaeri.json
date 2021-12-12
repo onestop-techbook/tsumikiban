@@ -26,9 +26,8 @@
   "catalog": {
     "PREDEF": ["preface.re"],
     "CHAPS": [
-      "chap-ohsawa0515.md",
-      "chap-kitazaki1.md",
       "chap-oyakata-why.md",
+      "chap-ohsawa0515.md",
       "chap-counter-for-why.md",
       "chap-oyakata-technicalproblem.md",
       "chap-tools.md",
@@ -36,6 +35,7 @@
       "chap-compatibility.md",
       "chap-powersupply.md",
       "chap-continuous-output.md",
+      "chap-kitazaki1.md",
       "Recipe-IoTCatFoodDispenser.md",
       "chap-hiyoko.md",
       "chap-mofu.md"
