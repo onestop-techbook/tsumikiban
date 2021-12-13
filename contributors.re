@@ -92,6 +92,20 @@
 //}
 一時期は安くて使い勝手のよいマイコンを探してはQiitaにセットアップの記事を書いていたerukitiです。大体Lチカで終わるタイプの人です。ここ二年くらいは、せいぜい自作キーボードを組み立てた程度で、電子工作からは遠ざかってました。この本をきっかけに久々に何か作ってみるかという気持ちになったのできっと何か作るでしょう。きっと…。
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/mottox2_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        もっと @mottox2 https://twitter.com/mottox2\\
+        サークル名： つのぶえ出版
+        \end{minipage}
+    \hspace{1ex}
+//}
+電子工作はあまり経験がありませんが、スマホのハードウェアを活かしたおもちゃを作るのが好きなので記事を書かせてもらいました。
+
+
 == 表紙イラスト・デザイン　
 
 //embed{
