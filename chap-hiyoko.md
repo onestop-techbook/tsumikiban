@@ -84,7 +84,7 @@ GAFAMのG社やA社から発売されている画面付きスマートスピー�
 
 気を取り直して、今度はGAS上でうごかすプログラムを作ります。また、天気予報の取得は気象庁のサーバーから直接取得することにしました、傘が必要かどうかを機械的に判断するプログラムを基本的には自力で作ることにしたため、Livedoor互換である必要がないためです。しかし、読みにくいJSONなのでLivedoor互換の方を利用するのも賢い選択の一つだと思います。セルフホストもできるようです[^tsukujima2020]。
 
-[^tsukujima2020]: 天気予報 API（livedoor 天気互換） GitHub - tsukumijima/weather-api: https://github.com/tsukumijima/weather-api
+[^tsukujima2020]: 『天気予報 API（livedoor 天気互換） GitHub - tsukumijima/weather-api』　　　　　 https://github.com/tsukumijima/weather-api （2021年11月22日閲覧）
 
 今回はGAS上で処理できる部分はなるべくGASで処理をし、気象庁からデータを取得する部分とマイコンからの問い合わせに答える部分は別のfuntionとすることにしました。ミスをした時により直しやすいのはGASの方であること、午前中に出かける時に傘が必要かを判断するのみであり、内部的な天気の取得は１日に一回、朝5時の予報で十分であると判断しました。また、テストがてらマイコン側は何回も試行したい、一緒にする意味がない、一つのことをうまくやるの精神が好きなどの理由もあります。
 
@@ -132,7 +132,7 @@ void hage(){
 
 ２つ目は動いていない間のスリープです。しかし、はんだ付けに失敗してブレイクアウトボードの16番のランドが剥がれていて自分で復帰するdeep sleepが使えなさそうです。また、deep sleepの制限時間[^deep-sleep-time-limit]を考えてもすこし今回の用途には合っていなさそうだったためRTCのアラーム機能などでなんとかRSTピンをGNDに落とせないか考え中です。可能ならいっそのこと動く間だけ給電してもいいかもしれないとも考えています。また、完成版は新しいブレイクアウトボードを用い、70分おきに起動してもいいかもしれません[^gasnara]。
 
-[^deep-sleep-time-limit]: 2^32-1=4294967295 ms ≒71.5 min
+[^deep-sleep-time-limit]: 2^32-1 (ms)=4294967295 ms ≒71.5 min
 
 [^gasnara]:GASなら罪悪感も無いですし。
 
@@ -175,7 +175,7 @@ SWITCH SCIENCE(2017)『i-Weather（アイウェザー）～玄関先で天気を
 
 TOYODA Eizi（2021）『TOYODA Eizi on Twitter: "一番伸びてるのはこれかしら。仕様の継続性や運用状況のお知らせを気象庁はお約束していないという意味で、APIではないと申し上げざるを得ないのですが、一方で政府標準利用規約に準拠してご利用いただけます。" / Twitter』https://twitter.com/e_toyoda/status/1364504338572410885 （2021年11月19日閲覧）
 
-tsukujima (2020) 『GitHub - tsukumijima/weather-api: 天気予報 API（livedoor 天気互換）』 https://github.com/tsukumijima/weather-api
+tsukujima (2020) 『GitHub - tsukumijima/weather-api: 天気予報 API（livedoor 天気互換）』 https://github.com/tsukumijima/weather-api （2021年11月22日閲覧）
 
 他、各種データシート等。
 
