@@ -34,13 +34,15 @@
       "chap-knowledge.md",
       "chap-compatibility.md",
       "chap-powersupply.md",
+      "chap-kiban.md",
       "chap-continuous-output.md",
       "chap-kitazaki1.md",
       "Recipe-IoTCatFoodDispenser.md",
       "chap-smart-phone.md",
       "chap-hiyoko.md",
       "chap-mofu.md",
-      "chap-erukiti.md"
+      "chap-erukiti.md",
+      "chap-newboard.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
