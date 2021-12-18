@@ -229,6 +229,11 @@ if (window.DeviceOrientationEvent) { // ①
 ただし加速度は向きの関係で負の数字になる場合もあるので、絶対値を合わせたものを全体の加速度とします。
 
 
+端末の向き、動作に関してはGoogle Developersにある記事[^device]がわかりやすいです。
+イベントで取得できるデータが図付きで解説されているので、実際にコードを書いてみたいと思った方は目を通すといいでしょう。
+
+[^device]: 端末画面の向きと端末のモーション https://developers.google.com/web/fundamentals/native-hardware/device-orientation
+
 ## 開発中に注意すること
 
 <!-- ### ユーザーの同意
