@@ -195,6 +195,35 @@ if (window.DeviceOrientationEvent) { // ①
 
 [^qiita]: スマートフォンを楽器にしてみた https://qiita.com/mottox2/items/f54eadc38e98586909a2
 
+#### 動きを検知する
+
+次のコードは、端末の動きを検知して、一定速度を超えたタイミングでメッセージを表示する例です。
+
+```js
+<div id="result"></div>
+<div id="status"></div>
+<script>
+  const round = (val, digit = 2) =>
+    (Math.round((val * 10) ^ digit) / 10) ^ digit;
+
+  const result = document.getElementById("result");
+  const status = document.getElementById("status");
+
+  window.addEventListener("devicemotion", (event) => {
+    const { x, y, z } = event.acceleration; // ①
+    const total = Math.abs(x) + Math.abs(y) + Math.abs(z); // ②
+    if (total > 50) {
+      result.innerText = "shaked!";
+    }
+    status.innerText = `x: ${round(x)}, y: ${round(y)}, z: ${round(z)}`;
+  });
+</script>
+```
+
+①ではDeviceMotionイベントに含まれるx, y, zの3方向の加速度を取得しています。
+
+②では3方向の動きを足し合わせて、一定以上であれば端末に大きな動きがあったとみなしています。
+ただし加速度は向きの関係で負の数字になる場合もあるので、絶対値を合わせたものを全体の加速度とします。
 
 
 ## 開発中に注意すること
