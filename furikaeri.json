@@ -42,7 +42,8 @@
       "chap-hiyoko.md",
       "chap-mofu.md",
       "chap-erukiti.md",
-      "chap-newboard.md"
+      "chap-newboard.md",
+      "crossreview.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
   }
