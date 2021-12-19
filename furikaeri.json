@@ -43,6 +43,7 @@
       "chap-mofu.md",
       "chap-erukiti.md",
       "chap-newboard.md",
+      "chap-kitazaki2.re",
       "crossreview.md"
     ],
     "POSTDEF": ["contributors.re", "postscript.re"]
